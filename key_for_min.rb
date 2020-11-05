@@ -5,8 +5,10 @@ require 'pry'
 
 def key_for_min_value(name_hash)
   name = nil 
-  
+  price = nil 
   name_hash.each do |key, value|
+    name = key 
+    price = value
     binding.pry
     if name_hash[key] < num
       num = name_hash[key]
